@@ -32,7 +32,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #fb7070;
+    color: #fff;
 }
 
 h1,
@@ -65,7 +65,7 @@ hr.star-primary:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
-    background: #fb7070;
+    background: #0c0c0c;
     border-radius: 5px;
 }
 
@@ -83,7 +83,7 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    color: #222;
+    color: #fff;
 
 }
 
@@ -93,14 +93,16 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background:
+    color: #000;
+    /*background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);*/
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    /*background:
     radial-gradient(black 15%, transparent 16%) 0 0,
     radial-gradient(black 15%, transparent 16%) 8px 8px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color:#3d3d3d;
-    background-size:15px 15px;
+    background-size:15px 15px;*/
 }
 
 
@@ -207,13 +209,14 @@ section h2 {
 
 section.success {
     color: #fff;
-    background:
+    /*background:
     radial-gradient(black 15%, transparent 16%) 0 0,
     radial-gradient(black 15%, transparent 16%) 8px 8px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color:#3d3d3d;
-    background-size:16px 16px;
+    background-size:16px 16px;*/
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 section.success a,
@@ -222,7 +225,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #fb7070;
+    color: #fff;
     border-radius: 5px;
 }
 
@@ -292,7 +295,7 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #000;
     font-size: 20px;
     color: #fff;
     background: 0 0;
@@ -374,13 +377,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#3d3d3d;
-    background-size:16px 16px;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 footer .footer-col {
