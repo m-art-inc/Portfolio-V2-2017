@@ -4,8 +4,20 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
+ /*font-family: 'Bungee Inline', cursive;
+ font-family: 'Bungee Shade', cursive;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Open Sans', sans-serif;*/
+
+
 body {
     overflow-x: hidden;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    font-kerning: auto;
+    
 }
 
 .navbar-brand {
@@ -42,17 +54,19 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: 'Ubuntu Mono', monospace, Helvetica,Arial,sans-serif;
-    font-weight: 500;
+    /*font-family: 'Ubuntu Mono', monospace, Helvetica,Arial,sans-serif;*/
+    font-family: 'Bungee Inline', cursive;
+    font-weight: 400;
 }
+
 
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
-    max-width: 320px;
+    max-width: 75%;
     border: 0;
-    border-top: dashed 3px;
+    border-top: double 5px;
     text-align: center;
 }
 
@@ -64,13 +78,13 @@ hr.star-primary:after {
     top: -.8em;
     padding: 0 .25em;
     font-family: FontAwesome;
-    font-size: 2em;
-    background: #0c0c0c;
-    border-radius: 5px;
+    font-size: 1.25em;
+    background: #222;
+    border-radius: 100%;
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #222;
 }
 
 hr.star-light:after {
@@ -87,22 +101,22 @@ hr.star-primary:after {
 
 }
 
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
 .img-centered {
     margin: 0 auto;
 }
 
 header {
     text-align: center;
-    color: #000;
-    /*background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);*/
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    /*background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#3d3d3d;
-    background-size:15px 15px;*/
+    color: #222;
+    background-image: linear-gradient(0deg, #fdfbfb 0%, #ebedee 100%);
+
 }
 
 
@@ -120,8 +134,8 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Monoton, "Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*font-family: 'Bungee Outline', cursive;*/
+    /*font-family: Monoton, "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+     font-family: 'Bungee Shade', cursive;
     font-size: 2.5em;
     font-weight: 500;
 }
@@ -175,7 +189,8 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: uppercase;
-    font-family: 'Ubuntu Mono', monospace, Helvetica,Arial,sans-serif;
+    /*font-family: 'Ubuntu Mono', monospace, Helvetica,Arial,sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     background: #222;
 
@@ -208,15 +223,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    /*background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#3d3d3d;
-    background-size:16px 16px;*/
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: #222;
+    background-image: linear-gradient(0deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 section.success a,
@@ -241,7 +249,7 @@ section.success a.active {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    /*margin: 0 0 15px;*/
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -289,13 +297,13 @@ section.success a.active {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        /*margin: 0 0 30px;*/
     }
 }
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #000;
+    border: solid 2px #222;
     font-size: 20px;
     color: #fff;
     background: 0 0;
@@ -368,7 +376,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #222;
 }
 
 footer h3 {
@@ -377,7 +385,8 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+
+    background-image: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 footer .footer-col {
@@ -386,18 +395,46 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background: #222;
+    background: #fff;
+}
+
+.btn-close {
+  background: #fa6969;
+  background-image: -webkit-linear-gradient(top, #fa6969, #960606);
+  background-image: -moz-linear-gradient(top, #fa6969, #960606);
+  background-image: -ms-linear-gradient(top, #fa6969, #960606);
+  background-image: -o-linear-gradient(top, #fa6969, #960606);
+  background-image: linear-gradient(to bottom, #fa6969, #960606);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border: solid #e0e0e0 2px;
+  text-decoration: none;
+}
+
+.btn-close:hover {
+  background: #fabebe;
+  background-image: -webkit-linear-gradient(top, #fabebe, #ad0000);
+  background-image: -moz-linear-gradient(top, #fabebe, #ad0000);
+  background-image: -ms-linear-gradient(top, #fabebe, #ad0000);
+  background-image: -o-linear-gradient(top, #fabebe, #ad0000);
+  background-image: linear-gradient(to bottom, #fabebe, #ad0000);
+  text-decoration: none;
 }
 
 .btn-social {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    border: 2px solid #222;
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
     line-height: 45px;
+    color: #222;
 }
 
 .btn:focus,
@@ -489,4 +526,16 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+
+.icon-list{
+  margin: 0 auto;
+}
+.icon-list ul {
+  text-align:center;
+  padding: 30px;
+}
+.icon-list ul li {
+  display: inline-block;
 }
