@@ -17,7 +17,7 @@ body {
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
     font-kerning: auto;
-    
+
 }
 
 .navbar-brand {
@@ -534,8 +534,9 @@ footer .footer-below {
 }
 .icon-list ul {
   text-align:center;
-  padding: 30px;
+  /*padding: 30px;*/
 }
 .icon-list ul li {
   display: inline-block;
+  padding: 10px
 }
