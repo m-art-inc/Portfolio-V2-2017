@@ -15,7 +15,7 @@
   margin: 0 auto;
   display: block;
   fill: url("#MyGradient");
-  stroke: #fff;
+  stroke: #222;
   stroke-miterlimit: 6;
 
 }

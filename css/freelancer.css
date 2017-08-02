@@ -29,13 +29,17 @@ body {
   padding: 0px 15px;
 }
 
+#about p{
+  padding-right: 2em;
+  padding-left: 2em;
+}
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a,
@@ -539,4 +543,7 @@ footer .footer-below {
 .icon-list ul li {
   display: inline-block;
   padding: 10px
+}
+.myself img{
+  margin: 0 auto;
 }
