@@ -547,3 +547,6 @@ footer .footer-below {
 .myself img{
   margin: 0 auto;
 }
+.myself{
+  top:-150px;
+}
