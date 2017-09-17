@@ -196,7 +196,8 @@ header .intro-text .skills {
     /*font-family: 'Ubuntu Mono', monospace, Helvetica,Arial,sans-serif;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background: #222;
+    backdrop-filter: blur(10px);
+    /*background: #222;*/
 
 }
 
@@ -312,7 +313,9 @@ section.success a.active {
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
+    padding: 10px;
 }
+
 
 .btn-outline:hover,
 .btn-outline:focus,
@@ -427,6 +430,11 @@ footer .footer-below {
   background-image: -o-linear-gradient(top, #fabebe, #ad0000);
   background-image: linear-gradient(to bottom, #fabebe, #ad0000);
   text-decoration: none;
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
 }
 
 .btn-social {
@@ -545,8 +553,13 @@ footer .footer-below {
   padding: 10px
 }
 .myself img{
-  margin: 0 auto;
+  margin: 0 auto
+
 }
 .myself{
   top:-150px;
+}
+.read-more a{
+  color: #222;
+
 }

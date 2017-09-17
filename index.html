@@ -207,13 +207,27 @@
           <hr class="style-two">
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Martin is a versatile artist and designer and a recent college graduate. He attended Portland State University earning a BA in Art Practices and a minor in Graphic Design. He enjoys working on different types of projects such as acrylic paintings,
-            drawings, illustrations and shooting some photography. He understands the importance of maintaining a balance between the analog and digital world. Therefore, he also enjoys working in computer-based projects involving typography, color theory,
-            web, graphic, UI, icon and print design.</p>
-            <p>By nature, he’s a problem solver and someone that likes to think like an engineer. Martin has good organizational skills and high attention to details and loves to collaborate with other designers. He’s a hard working and self-motivated individual
-              who will always maintain a positive attitude under any circumstance. He is proactive in learning new skills and learning about new technologies.</p>
+            <div class="row">
+              <div class="col-lg-12">
+
+                <p>Martin is a versatile artist and designer and a recent college graduate. He attended Portland State University earning a BA in Art Practices and a minor in Graphic Design. He enjoys working on different types of projects such as acrylic paintings,
+                  drawings, illustrations and shooting some photography. He understands the importance of maintaining a balance between the analog and digital world. Therefore, he also enjoys working in computer-based projects involving typography, color theory,
+                  web, graphic, UI, icon and print design.</p><br>
+
+                <p class="collapse" id="second-paragraph">
+                  By nature, he’s a problem solver and someone that likes to think like an engineer. Martin has good organizational skills and high attention to details and loves to collaborate with other designers. He’s a hard working and self-motivated individual
+                    who will always maintain a positive attitude under any circumstance. He is proactive in learning new skills and learning about new technologies.
+                </p>
+                  <div class="text-center">
+                    <!-- aria-expanded attribute is mandatory -->
+                    <!-- bootstrap changes it to true/false on toggle -->
+                    <a href="#second-paragraph" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id"><span class="collapsed">Show more <i class="fa fa-chevron-down"></i></span>
+                      <span class="expanded">Show Less <i class="fa fa-chevron-up"></i></span>
+                    </a>
+                  </div><br>
+
+              </div> <!-- col -->
+
         </div><br><br>
         <div class="col-lg-12">
           <h3 class="text-center">Overall Skills</h3>
@@ -227,7 +241,7 @@
                 </li>
                 <li>
                     <div ><h1><i class="devicon-photoshop-plain colored"></i></h1>
-                      <span class="icon-title">Photodhop</span>
+                      <span class="icon-title">Photoshop</span>
                     </div>
                 </li>
                 <li>
@@ -312,11 +326,11 @@
 
 
       </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+      <!-- <div class="row">
+        <div class="col-md-8 col-md-offset-2"> -->
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate>
+          <!-- <form name="sentMessage" id="contactForm" novalidate>
             <div class="row control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>Name</label>
@@ -354,7 +368,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -374,13 +388,13 @@
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li> -->
               <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                <a href="https://www.instagram.com/m.art.inc/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                <a href="https://twitter.com/m_art_inc" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/martincarmen03/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
               </li>
 
             </ul>
@@ -446,6 +460,9 @@
           </div>
         </div>
       </div>
+
+
+
     </div>
   </div>
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -770,6 +787,7 @@
 
   <!-- Custom Theme JavaScript -->
   <script src="js/freelancer.js"></script>
+
 
 </body>
 
