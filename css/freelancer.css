@@ -162,9 +162,6 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
-    /*.animated-logo{
-      margin-top: -700px;
-    }*/
 }
 
 @media(min-width:768px) {
