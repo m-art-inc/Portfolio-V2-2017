@@ -18,7 +18,7 @@ $(function() {
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
+        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
     }).on("focus", ".floating-label-form-group", function() {
         $(this).addClass("floating-label-form-group-with-focus");
     }).on("blur", ".floating-label-form-group", function() {
@@ -35,3 +35,25 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const themeStylesheet = document.getElementById('theme')
+//     const themeToggle = document.getElementById('theme-toggle')
+//     themeToggle.addEventListener('click', () => {
+//         // if it's light -> go dark
+//         if (themeStylesheet.href.includes('freelancer')) {
+//             themeStylesheet.href = 'dark-theme.css'
+//             themeToggle.innerText = 'Switch to light mode'
+//         } else {
+//             // if it's dark -> go light
+//             themeStylesheet.href = 'freelancer.css'
+//             themeToggle.innerText = 'Switch to dark mode'
+//         }
+//     })
+// })
