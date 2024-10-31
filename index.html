@@ -6,24 +6,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web Development, web design, graphic design, art, digital illustration, logo design, painting">
+    <meta name="description" content="web development, web design, graphic design, art, digital illustration, brand identity, logo design">
     <meta name="author" content="Martin Carmen">
-    <!-- Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-15587ND427"></script>
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NCTHPSS');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-15587ND427');
     </script>
     <!-- End Google Tag Manager -->
 
@@ -35,16 +31,10 @@
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/animated-logo-styles.css" rel="stylesheet">
-<!--     <link id="theme" rel="stylesheet" type="text/css" href="dark-theme.css" /> -->
-    <!-- <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css"> -->
-
-
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <!-- <link rel="stylesheet" href="css/fluid-gallery.css"> -->
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Monoton|Ubuntu+Mono" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Montserrat|Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -56,10 +46,6 @@
 </head>
 
 <body id="page-top" class="index">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCTHPSS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -82,11 +68,18 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <!-- <li class="page-scroll">
+                        <a href="#services">Services</a>
+                    </li> -->
+                    
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -103,10 +96,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- <img class="img-responsive" src="img/mainlogo.png" alt="mylogo"> -->
+                    <!--<img class="img-responsive" src="/img/mcclogoblack.svg" alt="mylogo">-->
 
-                    <div class="animated-logo">
-                        <!-- logo animation container -->
+                   <div class="animated-logo">
                         <svg id="Logo-Defs" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 375 375" xml:space="preserve">
                                   <defs>
                                       <linearGradient id="MyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -122,28 +114,166 @@
                                             109.8,404.1 66.8,337.4"/>
                                     </g>
                                   </defs>
-                                </svg>
+                        </svg>
 
                         <svg id="animatedLogo" class="Animate-Path" viewBox="0 0 430 700" xml:space="preserve">
                                   <use id="Draw-Mark" class="Animate-Draw" xlink:href="#Mark" />
                                   <use id="Draw-Frame" class="Animate-Draw" xlink:href="#Frame" />
                                   <use id="Draw-Frame" class="Animate-Draw" xlink:href="#Frame2" />
-                                  <use id="Draw-Frame" class="Animate-Draw" xlink:href="#Frame3" />
-                                  <!-- <use class="Animate-Fill" xlink:href="#Logo-Group" /> -->
-                      </svg>
+                                  <use id="Draw-Frame" class="Animate-Draw" xlink:href="#Frame3" /> 
+                        </svg>
                     </div>
 
                     <div class="intro-text">
                         <span class="name">Martin Carmen</span>
 
-                        <span class="skills">Web Developer | Graphic Artist</span>
-                        <hr class="star-light">
+                        <span class="titles">Web Developer | Graphic Designer</span>
+                        
+                        <!-- <hr class="star-light"> -->
+                        <!-- <p>
+                            Hi there! I'm Martin, a Latino web developer and graphic designer dedicated to transforming small business and dealership websites into engaging, user-friendly digital experiences. I specialize in web development and design services, focusing on website graphics, popups, landing pages, and anything else that can help bring their ideas to life. I love to help small business owners promote their products. With a keen eye for detail and a solid grasp of the latest technologies, I craft dynamic dealership sites, all to help my clients shine in the digital world.
+                        </p> -->
                         <!-- <hr> -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="style-two">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        <b>Who I Am:</b><br>
+                        I’m a Portland-based web developer and graphic designer with a passion for creating dynamic, responsive websites and visually engaging graphics. From technical support to SEO optimization and responsive design, I bring a full suite of skills to each project. <br>
+                        <br>
+                        <b>My Approach:</b><br>
+                        I’m dedicated to understanding each client’s unique goals and challenges, ensuring every design and technical decision is tailored for their success. Whether you need a captivating website, seamless integrations, or ongoing technical support, I leverage years of experience across multiple industries to deliver high-quality, dependable results.
+                        <br><br>
+                        <b>Experience Highlights:</b><br>
+                        <u>Dealer Spike LLC:</u> Provided end-to-end technical support, graphic design, and web development solutions for industries ranging from automotive to heavy equipment and powersports. Designed and implemented graphics, popups, and landing pages, and created code solutions to streamline internal processes.<br>
+                        <u>Technical Expertise:</u> Skilled in troubleshooting and resolving complex web issues, optimizing user experience, and ensuring compatibility across browsers and devices.                        
+                    </p>
+                    <br>           
+                    <br> 
+                    <br> 
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Services</h2>
+                        <hr class="style-two">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            <b>Web Development & Design</b><br>
+                            Providing reliable support to resolve technical issues, integrate third-party applications, and maintain website health. My goal is to ensure your digital presence operates smoothly and efficiently, with solutions that enhance user experience and boost performance.
+                            <br>
+                            <br>
+                            <b>Graphic Design & Digital Media</b><br>
+                            Crafting high-impact visuals, from logo design to animated graphics, that reinforce your brand's message and engage audiences. I specialize in creating popups, vector-based graphics, and multimedia content for social media and online platforms.
+                            <br>
+                            <br>
+                            <b>Technical Support & Troubleshooting</b>
+                            <br>
+                            Providing reliable support to resolve technical issues, integrate third-party applications, and maintain website health. My goal is to ensure your digital presence operates smoothly and efficiently, with solutions that enhance user experience and boost performance.</p>
+                            <br>           
+                            <br> 
+                            <br> 
+                    </div>
+
+
+                <div class="col-lg-12">
+                    <h2 class="text-center">Skills</h2>
+                    <hr class="style-two">
+
+                    <!-- <p>Some of the software I use is:</p> -->
+                    <div class="icon-list">
+                        <ul>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-illustrator-plain colored"></i></h1>
+                                    <span class="icon-title">Illustrator</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-photoshop-plain colored"></i></h1>
+                                    <span class="icon-title">Photoshop</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-bootstrap-plain colored"></i></h1>
+                                    <span class="icon-title">Bootstrap</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-html5-plain colored"></i></h1>
+                                    <span class="icon-title">Html</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-javascript-plain colored"></i></h1>
+                                    <span class="icon-title">Javascript</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-css3-plain colored"></i></h1>
+                                    <span class="icon-title">CSS</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-jquery-plain colored"></i></h1>
+                                    <span class="icon-title">JQuery</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-wordpress-plain colored"></i></h1>
+                                    <span class="icon-title">Wordpress</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-less-plain-wordmark colored"></i></h1>
+                                    <span class="icon-title">LESS</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h1><i class="devicon-github-plain colored"></i></h1>
+                                    <span class="icon-title">Github</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="col-md-12 myself">
+                        <img src="/img/me.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -219,100 +349,32 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section class="success" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>Testimonials</h2>
                     <hr class="style-two">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-
-                    <p>I find solutions to customer problems using graphic design, web development and technical support. I create website graphics, popups, landing pages and anything that can help bring their ideas to life. My technical support ability
-                        allows me to fix issues that might be going on with a website’s code or third-party integration. I pocess a grasp and understanding in design, modern web technologies, responsive frameworks, social media, browser compatibility
-                        and limitations, SEO best practices, security and an open mind for keeping up with the always-changing technologies. I enjoy using multiple mobile & computer operating systems to help with compatibility and consistency throughout.
-                        I'm a creative-minded individual capable of coming up with new concepts and ideas to solve problems while collaborating with a team or individual. </p>
-                    <br>
-                    <div class="col-md-12 myself">
-                        <img src="/img/me.png" class="img-responsive" alt="">
-                    </div>
-                    <hr class="style-two">
-
-                    <!-- col -->
-
-                </div>
-                <div class="col-lg-12">
-                    <h2 class="text-center">Skills</h2>
-                    <!-- <p>Some of my skills include Photoshop, Illustratot, InDesign and several other programs.</p> -->
-                    <div class="icon-list">
-                        <ul>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-illustrator-plain colored"></i></h1>
-                                    <span class="icon-title">Illustrator</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-photoshop-plain colored"></i></h1>
-                                    <span class="icon-title">Photoshop</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-bootstrap-plain colored"></i></h1>
-                                    <span class="icon-title">Bootstrap</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-html5-plain colored"></i></h1>
-                                    <span class="icon-title">Html</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-javascript-plain colored"></i></h1>
-                                    <span class="icon-title">Javascript</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-css3-plain colored"></i></h1>
-                                    <span class="icon-title">CSS</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-jquery-plain colored"></i></h1>
-                                    <span class="icon-title">JQuery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-wordpress-plain colored"></i></h1>
-                                    <span class="icon-title">Wordpress</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-less-plain-wordmark colored"></i></h1>
-                                    <span class="icon-title">LESS</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h1><i class="devicon-github-plain colored"></i></h1>
-                                    <span class="icon-title">Github</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-6">
+                    <img src="https://www.fydafreightliner.com/images/fydafreightliner-logo.png" class="img-responsive" alt="Dealer logo">
+                    <h3>Fyda Freighliner</h3>
+                    <p>
+                        Martin is always efficient and nails exactly what we envision every time. He is a pleasure to work with. <br><br>- Katie Kelly
+                    </p>
+                    
                 </div>
 
-
+                <div class="col-md-6">
+                    <img src="https://www.tracymotorsports.com/images/tracymotorsports-logo.png" class="img-responsive" alt="Dealer logo">
+                    <h3>Tracy Motorsports</h3>
+                    <p>
+                        Martin is the best! He always replies to my emails in a timely fashion.  I get the results I need very quickly. He is always professional as well. <br><br>- Dana
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -325,76 +387,76 @@
                     <h2>Contact</h2>
                     <hr class="style-two">
                     <br>
-                </div>
-                <div class="row">
-                    <ul class="contact-list text-center" style="list-style:none;">
-                        <div class="col-md-6">
-                            <li style="padding-bottom:30px;">
-                                <a class="btn btn-lg btn-success" href="mailto:martincarmen03@gmail.com ?subject=Website Inquiry - (Type Your Subject Here)" target="_blank"><i class="fa fa-inbox"></i> Email Me</a>
-                            </li>
-                        </div>
-                        <div class="col-md-6">
-                            <li style="padding-bottom:30px;">
-                                <a href="https://www.linkedin.com/in/martincarmen03/" target="_blank" class="btn btn-lg btn-success">
-                                    <i class="fa fa-linkedin"></i> LinkedIn</a>
-                            </li>
-                        </div>
-                    </ul>
+                    <div class="col-lg-12">
+                        <p>
+                            <b>Let’s Collaborate!</b><br>
+                            Ready to start your next project or need technical support? Contact me to discuss how I can help bring your ideas to life. Click below to schedule a consultation.
+                        </p>
+                        <br>           
+                        
+                    </div>
 
-                    <!-- <div class="text-center">
-              <a href:"mailto:martincarmen03@gmail.com" class="btn btn-lg btn-success"><i class="fa fa-inbox"></i> Email</a>
-            </div> -->
                 </div>
-                <hr class="style-two">
-                <br>
-
             </div>
 
 
         </div>
-        <!-- <div class="row">
-        <div class="col-md-8 col-md-offset-2"> -->
-        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-        <!-- <form name="sentMessage" id="contactForm" novalidate>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-8 col-md-offset-2"> -->
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                <!--<form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Message</label>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Email Address</label>
-                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <button type="submit" class="btn btn-success btn-lg">Submit</button>
-              </div>
-            </div>
-          </form>
+        </div>-->
+
+        <div class="row">
+            <ul class="contact-list text-center" style="list-style:none;">
+                <div class="col-lg-12">
+                    <li style="padding-bottom:30px;">
+                        <a class="btn btn-lg btn-success" href="mailto:martincarmen03@gmail.com ?subject=Website Inquiry - (Type Your Subject Here)" target="_blank"><i class="fa fa-inbox"></i> Email Me</a>
+                    </li>
+                </div>
+
+            </ul>
+
+            
         </div>
-      </div> -->
         </div>
     </section>
 
@@ -403,32 +465,26 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Portland, Oregon</p>
-                    </div> -->
+                
                     <div class="footer-col col-md-12">
-                        <!-- <h3>Find Me On</h3> -->
+                        <h3>Find Me On</h3>
                         <ul class="list-inline">
                             <!-- <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li> -->
-                            <!-- <li>
+                            <li>
                                 <a href="https://www.instagram.com/m.art.inc/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="https://twitter.com/m_art_inc" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li> -->
-                            <!-- <li>
+                            <li>
                                 <a href="https://www.linkedin.com/in/martincarmen03/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li> -->
+                            </li>
 
                         </ul>
                     </div>
-                    <!-- <div class="footer-col col-md-4">
-                        <h3>Bonus Content</h3>
-                        <p>If you would like to find out more about me please click  <a href="http://martincarmen.com">here</a>.</p>
-                    </div> -->
+                    
                 </div>
             </div>
         </div>

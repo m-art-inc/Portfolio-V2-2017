@@ -1,13 +1,10 @@
 #animatedLogo {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: -6em;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: -5em;
     margin: 0 auto;
-    display: block;
+    display: flex;
     stroke: #222;
     stroke-miterlimit: 6;
 }
