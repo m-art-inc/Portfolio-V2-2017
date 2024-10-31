@@ -563,3 +563,8 @@ a.navbar-brand {
         background-position: 200% 50%;
     }
 }
+
+
+.container.gallery-container {
+    padding: 30px 15px;
+}
